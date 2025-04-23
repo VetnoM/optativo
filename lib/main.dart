@@ -15,8 +15,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal, // Puedes cambiar el color aquí
         useMaterial3: true,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      
+
       ),
       home: const HomeScreen(),
+    debugShowCheckedModeBanner: false,
     );
   }
 }
