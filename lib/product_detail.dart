@@ -31,7 +31,7 @@ class ProductDetail extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(25),
         child: Column(
           children: [
             // Fila con imagen y detalles
@@ -40,19 +40,24 @@ class ProductDetail extends StatelessWidget {
               children: [
                 // Imagen a la izquierda
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(30),
                   child: Image.network(
                     producto.imagenUrl,
-                    height: 150,
-                    width: 150,
+                    height: 130,
+                    width: 130,
                     fit: BoxFit.cover,
+                    errorBuilder: (context, error, stackTrace) {
+                      return const Icon(Icons.error, size: 130);
+                    },
+                    
                   ),
+                  
                 ),
-                const SizedBox(width: 20),
+                const SizedBox(width: 25),
                 // Texto a la derecha
                 Expanded(
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
                         producto.titulo,

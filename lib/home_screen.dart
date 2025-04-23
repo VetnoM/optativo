@@ -34,8 +34,8 @@ class HomeScreen extends StatelessWidget {
         itemBuilder: (context, index) {
           final producto = productos[index];
           return Card(
-            margin: const EdgeInsets.all(20),
-            elevation: 4,
+            margin: const EdgeInsets.all(15),
+            elevation: 15,
             child: InkWell(
               onTap: () {
                 Navigator.push(
@@ -52,20 +52,20 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     child: Image.network(
                       producto.imagenUrl,
-                      height: 250,
+                      height: 190,
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: const EdgeInsets.all(25),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           producto.titulo,
                           style: const TextStyle(
-                            fontSize: 18,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -73,11 +73,11 @@ class HomeScreen extends StatelessWidget {
                         Text(
                           '${producto.precio.toStringAsFixed(2)} €',
                           style: const TextStyle(
-                            fontSize: 16,
+                            fontSize: 19,
                             color: Colors.teal,
                           ),
                         ),
-                        const SizedBox(height: 4),
+                        const SizedBox(height: 15),
                         Text(producto.descripcionCorta),
                       ],
                     ),

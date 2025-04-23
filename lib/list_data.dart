@@ -8,13 +8,13 @@ final List<Product> productos = [
     descripcionLarga: 'La PlayStation 5 ofrece gráficos 4K y cargas ultra rápidas.',
     precio: 499.99,
   ),
-  Product(
-    titulo: 'Nintendo Switch',
-    imagenUrl: 'https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_1920,q_auto:low/MNS/NOE/000000000010002207/1.1_ProductGallery_NintendoSwitch_BeautyShotHandheldMode_NOE',
-    descripcionCorta: 'Consola híbrida portátil',
-    descripcionLarga: 'Juega en casa o en cualquier lugar con la Nintendo Switch.',
-    precio: 299.99,
-  ),
+Product(
+  titulo: 'PlayStation 2',
+  descripcionCorta: 'Clásica consola de Sony',
+  descripcionLarga: 'La consola más vendida de todos los tiempos. Disfruta de clásicos inolvidables con la PS2.',
+  precio: 89.99,
+  imagenUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVEgzeCqualYZIIvLt3qIH0ZSt6rqMa-wzcEIDssHleXgFOOqC_m5aSMcQFfU6SXB52Y&usqp=CAU', 
+),
   Product(
     titulo: 'Xbox Series X',
     imagenUrl: 'https://m.media-amazon.com/images/I/61nq7mC0tHL.jpg',
